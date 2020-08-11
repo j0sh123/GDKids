@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TxtFormat1" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/TxtView</item>
+    </style>
+
+    <style name="TxtFormat2" parent="TxtFormat1">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="edtRound" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:background">@drawable/input_field</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/colorEdt</item>
+        <item name="android:textColorHint">@color/colorEdtHint</item>
+        
+    </style>
+
+    <style name="edtFormat1" parent="edtRound">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="edtRound2" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:background">@drawable/input_field</item>
+        <item name="android:paddingRight">10dp</item> <!-- 20 both-->
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="EdtNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorEdt</item>
+    </style>
+
+</resources>

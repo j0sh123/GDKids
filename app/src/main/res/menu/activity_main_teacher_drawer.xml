@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_classes"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_classes" />
+
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_check"
+            android:title="@string/menu_videos" />
+
+        <item
+            android:id="@+id/nav_tch_audios"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Grabaciones" />
+    </group>
+
+    <item android:title="Alumnos">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_list_students"
+                    android:icon="@drawable/ic_menu_books"
+                    android:title="@string/menu_list_students" />
+
+                <item
+                    android:id="@+id/nav_scores_students_day"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="@string/menu_list_students_scores_day" />
+
+                <item
+                    android:id="@+id/nav_messeges"
+                    android:icon="@drawable/ic_menu_messages"
+                    android:title="@string/menu_list_menssages" />
+
+                <item
+                    android:id="@+id/nav_std_audios"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="menus" />
+
+                <item
+                    android:id="@+id/nav_std_homeWork"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Tareas" />
+
+                <item
+                    android:id="@+id/nav_std_marks"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Tareas" />
+            </group>
+        </menu>
+    </item>
+</menu>

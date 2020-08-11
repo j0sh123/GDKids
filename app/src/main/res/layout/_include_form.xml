@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+
+    <LinearLayout
+        style="@style/LinearLayoutFormat1">
+
+        <TextView
+            style="@style/TxtFormat1"
+            android:text="Nombre"
+            android:layout_marginBottom="@dimen/space1"/>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:hint="@string/edt_name1"
+            style="@style/edtFormat1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutFormat1">
+
+        <TextView
+            style="@style/TxtFormat1"
+            android:text="Apellidos"/>
+
+        <EditText
+            android:id="@+id/edt_lastName"
+            android:hint="@string/edt_lastName1"
+            style="@style/edtFormat1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutFormat1">
+
+        <TextView
+            style="@style/TxtFormat1"
+            android:text="DNI" />
+
+        <EditText
+            android:id="@+id/edt_dni"
+            style="@style/edtFormat1"
+            android:hint="dni" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutFormat1">
+
+        <TextView
+            style="@style/TxtFormat1"
+            android:text="Fec. Nacimiento"/>
+
+        <EditText
+            android:id="@+id/edt_birth_date"
+            style="@style/edtFormat1"
+            android:hint="fec. nacimiento"
+            android:inputType="date"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutFormat1">
+
+        <TextView
+            style="@style/TxtFormat1"
+            android:text="Distrito"/>
+
+        <EditText
+            android:id="@+id/edt_distric"
+            style="@style/edtFormat1"
+            android:hint="distrito" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutFormat1">
+
+        <TextView
+            style="@style/TxtFormat1"
+            android:text="Dirección"/>
+
+        <EditText
+            android:id="@+id/edt_address"
+            style="@style/edtFormat1"
+            android:hint="dirección" />
+
+    </LinearLayout>
+
+</LinearLayout>

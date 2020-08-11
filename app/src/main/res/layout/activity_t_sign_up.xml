@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".TsignUp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Configuración"
+            android:textColor="@color/colorSubtitle1"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textColor="@color/colorTitle2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="40dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Tu Perfil"
+                android:textColor="@color/colorTitle1"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_view"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circle_image"
+                    android:src="@mipmap/ic_gd_logo_round" />
+
+                <TextView
+                    android:id="@+id/txt_changeImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="CAMBIAR IMAGEN"
+                    android:textColor="@color/colorTitle2"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--    Formulario  -->
+            <LinearLayout style="@style/LinearLayoutFormat1">
+
+                <TextView
+                    style="@style/TxtFormat1"
+                    android:layout_marginTop="@dimen/space1"
+                    android:text="Profesor"
+                    android:textColor="@color/colorTitle2" />
+
+                <!-- INCLUIR PLANTILLA DE FORMULARIO -->
+                <include layout="@layout/_include_form" />
+                <!--    ****    -->
+                <LinearLayout style="@style/LinearLayoutFormat1">
+
+                    <TextView
+                        style="@style/TxtFormat1"
+                        android:text="Celular"
+                        app:layout_constraintVertical_bias="0.758" />
+
+                    <EditText
+                        android:id="@+id/edt_phone"
+                        style="@style/edtFormat1"
+                        android:hint="celular" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutFormat1">
+
+                    <TextView
+                        style="@style/TxtFormat1"
+                        android:text="Correo electrónico"
+                        app:layout_constraintVertical_bias="0.758" />
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        style="@style/edtFormat1"
+                        android:hint="correo electrónico" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutFormat1">
+
+                    <TextView
+                        style="@style/TxtFormat1"
+                        android:text="Colegio"
+                        app:layout_constraintVertical_bias="0.758" />
+
+                    <EditText
+                        android:id="@+id/edt_school"
+                        style="@style/edtFormat1"
+                        android:hint="colegio" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutFormat1">
+
+                    <TextView
+                        style="@style/TxtFormat1"
+                        android:text="Aula"
+                        app:layout_constraintVertical_bias="0.758" />
+
+                    <EditText
+                        android:id="@+id/edt_classRoom"
+                        style="@style/edtFormat1"
+                        android:hint="aula" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

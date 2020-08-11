@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#fff</color>
+    <color name="lightBlue">#47A9DF</color>
+    <color name="colorBtn1">#FFA622</color>
+    <color name="colorTitle1">#292929</color>
+    <color name="colorTitle2">#E1972A</color>
+    <color name="colorSubtitle1">#919191</color>
+    <color name="background">#fff</color>
+    <color name="colorEdt">#1E1E1E</color>
+    <color name="colorEdtHint">#919191</color>
+    <color name="TxtView">#919191</color>
+    <color name="BtnAnimation">#F3DAC2</color>
+    <color name="btnText">#fff</color>
+    <color name="red">#C30C0C</color>
+    <color name="red_dark">#832020</color>
+    <color name="close">#919191</color>
+    <color name="lineHorizontal">#E4919191</color>
+    <color name="black">#E4000000</color>
+    <color name="gray">#919191</color>
+    <color name="gray_light">#F6F5F5</color>
+    <color name="gray_light_chat">#DDDCDC</color>
+    <color name="chatleft">#EDFF9D09</color>
+    <color name="green">#57FF09</color>
+</resources>

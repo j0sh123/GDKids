@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.stScoresDay.stScoresDayFragment">
+
+    <TextView
+        android:textSize="20sp"
+        style="@style/TxtFormat2"
+        android:text="ALUMNOS"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+    <ListView
+        android:id="@+id/listview_scoresOfStudents_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+    </ListView>
+
+</LinearLayout>

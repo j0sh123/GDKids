@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">GdKids2</string>
+    <dimen name="space1">5dp</dimen>
+    <dimen name="space2">10dp</dimen>
+
+    <!--    ******************     -->
+    <string name="edt_name1">nombres</string>
+    <string name="edt_lastName1">apellidos</string>
+    <!--    *******************     -->
+
+    <string name="title_activity_main_teacher">MainTeacher</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Guardar</string>
+
+    <string name="menu_home">Principal</string>
+    <string name="menu_classes">Videos</string>
+    <string name="menu_videos">Clases</string>
+    <string name="menu_students">Alumnos</string>
+    <string name="menu_list_students">Lista de Alumnos</string>
+    <string name="menu_list_students_scores_day">Notas del día</string>
+    <string name="menu_list_menssages">Mensajes</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

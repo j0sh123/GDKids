@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_listStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_animation"
+        android:backgroundTint="@color/background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imv_listStudent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_gd_logo_round" />
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TxtFormat2"
+                    android:text="Cod: " />
+
+                <TextView
+                    android:id="@+id/txt_item_id_student"
+                    style="@style/TxtFormat2"
+                    android:text="001" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_item_name_student"
+                    style="@style/TxtFormat1"
+                    android:text="NOMBRE"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_item_last_name_student"
+                    style="@style/TxtFormat1"
+                    android:text="APELLIDO" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:paddingRight="5dp">
+
+            <ImageButton
+                android:id="@+id/imb_event_1"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_marginRight="10dp"
+                android:baselineAligned="false"
+                android:src="@drawable/ic_check"
+                android:background="@null"/>
+
+            <ImageButton
+                android:id="@+id/imb_event_2"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:background="@drawable/ic_page" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

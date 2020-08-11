@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.graddualkids.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_t_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_classes"
+            app:exitAnim="@animator/fade_out"
+            app:enterAnim="@animator/slide_in"/>
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_videos"
+            app:exitAnim="@animator/fade_out"
+            app:enterAnim="@animator/slide_in"/>
+        <action
+            android:id="@+id/action_nav_home_to_nav_list_students"
+            app:destination="@id/nav_list_students" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_videos"
+        android:name="com.example.graddualkids.ui.videos.SlideshowFragment"
+        android:label="@string/menu_students"
+        tools:layout="@layout/fragment_t_videos" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_scores_students_day"
+        android:name="com.example.graddualkids.ui.stScoresDay.stScoresDayFragment"
+        android:label="@string/menu_list_students_scores_day"
+        tools:layout="@layout/fragment_t_s_scores_day">
+        <action
+            android:id="@+id/action_nav_scores_students_day_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_scores_students_day_to_nav_home2"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_list_students"
+        android:name="com.example.graddualkids.ui.stList.stListFragment"
+        android:label="@string/menu_list_students"
+        tools:layout="@layout/fragment_t_s_scores_day">
+        <action
+            android:id="@+id/action_nav_list_students_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_list_students_to_nav_home2"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+
+        <fragment
+            android:id="@+id/nav_messeges"
+            android:name="com.example.graddualkids.chat2.FragmentUsersChats"
+            android:label="@string/menu_list_menssages"
+            tools:layout="@layout/fragment_t_chats" >
+
+            <action
+                android:id="@+id/action_nav_gallery_to_nav_home"
+                app:popUpTo="@id/nav_home" />
+            <action
+                android:id="@+id/action_nav_gallery_to_nav_home2"
+                app:destination="@id/nav_home" />
+        </fragment>
+
+</navigation>

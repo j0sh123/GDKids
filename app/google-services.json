@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1043202982436",
+    "firebase_url": "https://bdgdkids.firebaseio.com",
+    "project_id": "bdgdkids",
+    "storage_bucket": "bdgdkids.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043202982436:android:6176cd1d0ebfdccf49ceb1",
+        "android_client_info": {
+          "package_name": "com.example.graddualkids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043202982436-f0v5tplfeg43u40vmrv7cljijl89holc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.graddualkids",
+            "certificate_hash": "ea4cffcbe8a81162ab1653379d50f4410df03e5e"
+          }
+        },
+        {
+          "client_id": "1043202982436-4mjdn5hnrm4akd854s1ee5nvrr177rt3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiFZg1Vu6jDgTq-S21jp5U0VwzpE-q72o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043202982436-4mjdn5hnrm4akd854s1ee5nvrr177rt3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

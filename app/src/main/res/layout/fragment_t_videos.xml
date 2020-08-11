@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:paddingTop="0dp"
+    tools:context=".ui.videos.SlideshowFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/linarLaoyts_main"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TxtFormat1"
+                android:layout_marginLeft="@dimen/margin_left_txt"
+                android:text="VIDEO" />
+            <!--    TEXTO DE URL    -->
+            <LinearLayout
+                android:id="@+id/linearLayout_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/TxtFormat1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:text="INGRESAR URL" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <EditText
+                        android:id="@+id/edt_url"
+                        style="@style/edtRound2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:hint="URL"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_search"
+                    style="@style/btnStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="VER"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!--   cmt-VIDEO    -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    style="@style/btnStyle_close_x_gray"
+                    android:layout_alignRight="@id/recycle_view"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_delete_lastOne"
+                    style="@style/btnStyle_close_x_gray"
+                    android:layout_alignRight="@id/recycle_view"
+                    android:layout_alignBottom="@id/recycle_view"
+                    android:text="--" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- LINIA -->
+        <LinearLayout
+            android:layout_width="@dimen/horizontal_line_width"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/horizontal_line_top"
+            android:background="@color/lineHorizontal" />
+        <!--/////////-->
+
+        <!--    IMAGENES    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/linarLaoyts_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TxtFormat1"
+                android:layout_marginLeft="@dimen/margin_left_txt"
+                android:text="IMAGENES" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="1dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageView
+                                android:id="@+id/imgview_images1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/borders_lines" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/btn_delete_images1"
+                            style="@style/btnStyle_close_x_gray"
+                            android:layout_alignRight="@id/cardView1"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/txt_add_images1"
+                            style="@style/TxtFormat1"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="20dp"
+                            android:elevation="5dp"
+                            android:text="+"
+                            android:textColor="@color/close"
+                            android:textSize="30sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="1dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageView
+                                android:id="@+id/imgview_images2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/borders_lines"
+                                android:scaleType="centerCrop" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/txt_add_images2"
+                            style="@style/TxtFormat1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:elevation="5dp"
+                            android:text="+"
+                            android:textColor="@color/close"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/btn_delete_images2"
+                            style="@style/btnStyle_close_x_gray"
+                            android:layout_alignRight="@id/cardView2"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="1dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageView
+                                android:id="@+id/imgview_images3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/borders_lines"
+                                android:scaleType="centerCrop" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/txt_add_images3"
+                            style="@style/TxtFormat1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:elevation="5dp"
+                            android:text="+"
+                            android:textColor="@color/close"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/btn_delete_images3"
+                            style="@style/btnStyle_close_x_gray"
+                            android:layout_alignRight="@id/cardView3"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- LINE -->
+        <LinearLayout
+            android:layout_width="@dimen/horizontal_line_width"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/horizontal_line_top"
+            android:background="@color/lineHorizontal" />
+        <!--/////////-->
+
+        <!-- cmt-Audio -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/linarLaoyts_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/linarLaoyts_top"
+                android:layout_marginBottom="@dimen/linarLaoyts_top"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/TxtFormat1"
+                    android:layout_marginLeft="@dimen/margin_left_txt"
+                    android:text="GRABACIONES"
+                    android:layout_weight="0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="right">
+                    <ImageButton
+                        android:id="@+id/imb_add_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_list_add"
+                        android:layout_marginRight="@dimen/margin_left_txt"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_recorder_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/linearLayout_recorder_fragment_mic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true"
+                    android:visibility="visible">
+
+                     <include layout="@layout/_audio_record"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_recorder_fragment_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@color/gray_light">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleview_audios"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- LINE -->
+        <LinearLayout
+            android:layout_width="@dimen/horizontal_line_width"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center"
+            android:background="@color/lineHorizontal" />
+        <!--/////////-->
+
+        <!-- cmt-tareas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/linarLaoyts_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TxtFormat1"
+                android:layout_marginLeft="@dimen/margin_left_txt"
+                android:text="TAREAS" />
+
+            <EditText
+                android:id="@+id/edt_tasks"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
