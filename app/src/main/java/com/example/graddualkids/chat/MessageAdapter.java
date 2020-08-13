@@ -1,4 +1,4 @@
-package com.example.graddualkids.chat2;
+package com.example.graddualkids.chat;
 
 import android.content.Context;
 import android.view.LayoutInflater;

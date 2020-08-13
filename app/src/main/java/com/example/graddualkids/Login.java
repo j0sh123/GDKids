@@ -18,9 +18,6 @@ import android.widget.TextView;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.graddualkids.chat2.AbrirFragment;
-import com.example.graddualkids.chat2.LoginActivity;
-import com.example.graddualkids.chat2.ResetPasword;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -49,8 +46,6 @@ public class Login extends AppCompatActivity {
         textClick();
         configViwe();
         login();
-        /*****  error no permite ingresar el celular de migul pero el mio si
-         * los chats actuales no se muestra*/
     }
 
     private void login() {

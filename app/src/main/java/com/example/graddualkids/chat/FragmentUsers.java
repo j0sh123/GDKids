@@ -1,4 +1,4 @@
-package com.example.graddualkids.chat2;
+package com.example.graddualkids.chat;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,7 +28,7 @@ public class FragmentUsers extends Fragment {
     /****       ASI MOSTRARIA ALUMNOS QUE SE HAN REGISTRADO - ENLASADO CON FIREBASE     **/
     private RecyclerView recyclerView;
 
-    private UsersAdapter usersAdapter;
+    private UserAdapter usersAdapter;
     private List<user>  mUsers;
 
 
@@ -59,7 +59,7 @@ public class FragmentUsers extends Fragment {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mUsers.clear();
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
-                    user user = snapshot.getValue(com.example.graddualkids.chat2.user.class);
+                    user user = snapshot.getValue(com.example.graddualkids.chat.user.class);
 
                     assert user !=null;
                     assert firebaseUser !=null;
@@ -67,7 +67,7 @@ public class FragmentUsers extends Fragment {
                         mUsers.add(user);
                     }
                 }
-                usersAdapter = new UsersAdapter(getContext(),mUsers,false);
+                usersAdapter = new UserAdapter(getContext(),mUsers);
                 recyclerView.setAdapter(usersAdapter);
             }
 

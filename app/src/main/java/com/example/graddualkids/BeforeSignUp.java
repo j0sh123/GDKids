@@ -7,11 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.graddualkids.chat2.RegisterActivity;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class BeforeSignUp extends AppCompatActivity {

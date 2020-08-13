@@ -1,4 +1,5 @@
-package com.example.graddualkids.chat2;
+
+package com.example.graddualkids.chat;
 
 import android.content.Context;
 import android.content.Intent;
@@ -22,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
 
-public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> {
+public class UsersAdapterChat extends RecyclerView.Adapter<UsersAdapterChat.ViewHolder> {
 
     private Context context;
     private List<user> mUsers;
@@ -30,7 +31,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
 
     private String theLastMessage;
 
-    public UsersAdapter(Context context, List<user> mUsers, boolean isOnline) {
+    public UsersAdapterChat(Context context, List<user> mUsers, boolean isOnline) {
         this.context = context;
         this.mUsers = mUsers;
         this.isOnline = isOnline;
@@ -40,7 +41,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout._c_users_item,parent,false);
-        return new UsersAdapter.ViewHolder(view);
+        return new UsersAdapterChat.ViewHolder(view);
     }
 
     @Override
@@ -71,7 +72,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,MessageActivity.class);
+                Intent intent = new Intent(context, MessageActivity.class);
                 intent.putExtra("userId",user.getid());
                 context.startActivity(intent);
             }

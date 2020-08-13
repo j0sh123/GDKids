@@ -64,7 +64,7 @@
 
         <fragment
             android:id="@+id/nav_messeges"
-            android:name="com.example.graddualkids.chat2.FragmentUsersChats"
+            android:name="com.example.graddualkids.chat.FragmentUsersChats"
             android:label="@string/menu_list_menssages"
             tools:layout="@layout/fragment_t_chats" >
 

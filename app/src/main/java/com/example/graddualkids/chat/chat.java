@@ -1,4 +1,4 @@
-package com.example.graddualkids.chat2;
+package com.example.graddualkids.chat;
 
 /********  MODEL****/
 public class chat {

@@ -14,10 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.graddualkids.R;
 import com.example.graddualkids.chat.UserAdapter;
-import com.example.graddualkids.chat2.UsersAdapter;
-import com.example.graddualkids.chat2.user;
-import com.example.graddualkids.model.StudentData;
-import com.example.graddualkids.ui.stScoresDay.stScoresDayFragment;
+import com.example.graddualkids.chat.user;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -71,7 +68,7 @@ public class stListFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mUsers.clear();
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
-                    user user = snapshot.getValue(com.example.graddualkids.chat2.user.class);
+                    user user = snapshot.getValue(com.example.graddualkids.chat.user.class);
 
                     assert user !=null;
                     assert firebaseUser !=null;

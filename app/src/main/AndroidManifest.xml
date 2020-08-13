@@ -15,15 +15,15 @@
         android:roundIcon="@mipmap/ic_gd_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeStatusBarColor">
-        <activity android:name=".chat2.ResetPasword"></activity>
+        <activity android:name=".ResetPasword"></activity>
         <activity android:name=".chat2.AbrirFragment" />
 <!--        <activity android:name=".chat2.FragmentUsers" />-->
-        <activity android:name=".chat2.MessageActivity" />
+        <activity android:name=".chat.MessageActivity" />
         <activity android:name=".chat2.LoginActivity">
 <!--            aqui es el login del chat-->
         </activity>
         <activity android:name=".chat2.MainActivity_chat" />
-        <activity android:name=".chat2.RegisterActivity" />
+        <activity android:name=".RegisterActivity" />
         <activity
             android:name=".MainTeacher"
             android:label="@string/title_activity_main_teacher"

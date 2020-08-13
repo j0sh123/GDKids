@@ -1,4 +1,4 @@
-package com.example.graddualkids.chat2;
+package com.example.graddualkids.chat;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -175,7 +175,7 @@ public class MessageActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mChat.clear();
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
-                    chat chat = snapshot.getValue(com.example.graddualkids.chat2.chat.class);
+                    chat chat = snapshot.getValue(com.example.graddualkids.chat.chat.class);
                     if (chat.getReceiver().equals(myId) && chat.getSender().equals(userId) ||
                             chat.getReceiver().equals(userId) && chat.getSender().equals(myId)){
                         mChat.add(chat);

@@ -1,4 +1,4 @@
-package com.example.graddualkids.chat2;
+package com.example.graddualkids.chat;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -28,7 +28,7 @@ public class FragmentUsersChats extends Fragment {
     /*******    MOSTARIA LOS CHATS EN MENSAJERIA DEL PROFE Y DEL ALUMNO*******/
     private RecyclerView recyclerView;
 
-    private UsersAdapter usersAdapter;
+    private UsersAdapterChat usersAdapter;
     private List<user>  mUsers;
 
     private FirebaseUser firebaseUser;
@@ -110,7 +110,7 @@ public class FragmentUsersChats extends Fragment {
                         }
                     }
                 }
-                usersAdapter = new UsersAdapter(getContext(),mUsers,true);
+                usersAdapter = new UsersAdapterChat(getContext(),mUsers,true);
                 recyclerView.setAdapter(usersAdapter);
             }
 
@@ -148,7 +148,7 @@ public class FragmentUsersChats extends Fragment {
                         }
                     }
                 }
-                usersAdapter = new UsersAdapter(getContext(),mUsers,true);
+                usersAdapter = new UsersAdapterChat(getContext(),mUsers,true);
                 recyclerView.setAdapter(usersAdapter);
             }
 
