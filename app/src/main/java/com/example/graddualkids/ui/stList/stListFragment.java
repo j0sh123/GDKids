@@ -29,7 +29,7 @@ import java.util.List;
 
 public class stListFragment extends Fragment {
 
-    /*****  MUESTRA LISTA E ALIMNOS DESDE FIREBASE**/
+    /*****  MUESTRA LISTA Dx    E ALIMNOS DESDE FIREBASE**/
     private ListView listViewSudents;
     private stListAdapter adapter;
     private RecyclerView recyclerView;
@@ -76,7 +76,7 @@ public class stListFragment extends Fragment {
                         mUsers.add(user);
                     }
                 }
-                usersAdapter = new UserAdapter(getContext(),mUsers,false);
+                usersAdapter = new UserAdapter(getContext(),mUsers);
                 recyclerView.setAdapter(usersAdapter);
             }
 

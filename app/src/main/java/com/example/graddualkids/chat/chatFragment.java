@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.graddualkids.R;
-//import com.example.graddualkids.chat2.UsersAdapter;
+import com.example.graddualkids.chat.UsersAdapterChat;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -26,12 +26,10 @@ import java.util.List;
 
 public class chatFragment extends Fragment {
 
-    /** PROCURAR QUITAR TODO DE CHAT2*/
-
     /****   NO FUNCIONA PARA MOSTRAR LOS CHATS CUANDO TE ESCRIBEN****/
     private RecyclerView recyclerView;
 
-    private UserAdapter usersAdapter;
+    private UsersAdapterChat usersAdapter;
     private List<user> mUsers;
 
     private FirebaseUser firebaseUser;
@@ -90,7 +88,7 @@ public class chatFragment extends Fragment {
                         }
                     }
                 }
-                usersAdapter = new UserAdapter(getContext(),mUsers,true);
+                usersAdapter = new UsersAdapterChat(getContext(),mUsers,true);
                 recyclerView.setAdapter(usersAdapter);
             }
 
